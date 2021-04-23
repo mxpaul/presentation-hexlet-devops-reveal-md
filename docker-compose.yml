@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  reveal:
+    image: webpronl/reveal-md:latest
+    container_name: reveal_md 
+    volumes:
+      - ./slides:/slides
+    ports:
+      - 1948
+      - 35729
+    network_mode: "host"
+    working_dir: /slides
+    #entrypoint: node /app/bin/reveal-md.js /slides -w --css styles.css --theme https://rawgit.com/puzzle/pitc-revealjs-theme/master/theme/puzzle.css
+    entrypoint: node /app/bin/reveal-md.js /slides -w
+    #entrypoint: node /app/bin/reveal-md.js /slides -w --css styles.css,reveal.scss
+
