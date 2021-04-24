@@ -1,0 +1,16 @@
+
+section {
+  font-size: 60%; 
+}
+
+.reveal p {
+  text-align: left;
+}
+.reveal ul {
+  display: block;
+  margin-bottom: 1em;
+}
+.reveal ol {
+  display: block;
+}
+

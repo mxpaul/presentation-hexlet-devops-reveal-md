@@ -12,6 +12,6 @@ services:
     network_mode: "host"
     working_dir: /slides
     #entrypoint: node /app/bin/reveal-md.js /slides -w --css styles.css --theme https://rawgit.com/puzzle/pitc-revealjs-theme/master/theme/puzzle.css
-    entrypoint: node /app/bin/reveal-md.js /slides -w
+    entrypoint: node /app/bin/reveal-md.js /slides -w --css styles.css
     #entrypoint: node /app/bin/reveal-md.js /slides -w --css styles.css,reveal.scss
 
